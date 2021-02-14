@@ -1,0 +1,229 @@
+.tameline {
+  padding-top: 60px;
+  padding-bottom: 65px;
+  width: 100%;
+  overflow: hidden;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 86px;
+    padding-bottom: 89px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 139px;
+    padding-bottom: 110px;
+    background-image: url("../img/img-tameline/bg-tamelite.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+}
+.wrapper-title {
+  text-align: center;
+  margin-bottom: 44px;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 150px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 145px;
+  }
+}
+.wrapper-tameline {
+  max-width: 1005px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tameline-block {
+  max-width: 100%;
+  min-height: 187px;
+  padding-left: 102px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 4px;
+    background-color: #e1eef4;
+    position: absolute;
+    top: 94px;
+    bottom: 20px;
+    left: 33px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    max-width: 50%;
+    padding-left: 68px;
+    min-height: 225px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 50%;
+    padding-left: 83px;
+    min-height: 225px;
+  }
+}
+.tameline-block:hover {
+  cursor: pointer;
+  .tameline-block-text .header4.bottom-line::before {
+    background-color: var(--yellow);
+    transition: 0.5s;
+  }
+}
+.tameline-block:nth-child(even) {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+
+    &::after {
+      left: -2px;
+    }
+    .tameline-block-icon {
+      left: -37px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: auto;
+    &::after {
+      left: -2px;
+    }
+    .tameline-block-icon {
+      left: -37px;
+    }
+  }
+}
+.tameline-block:nth-child(odd) {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 0;
+    padding-right: 68px;
+    text-align: right;
+    &::after {
+      left: auto;
+      right: -2px;
+    }
+    .tameline-block-icon {
+      left: auto;
+      right: -37px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 80px;
+    text-align: right;
+    &::after {
+      left: auto;
+      right: -2px;
+    }
+    .tameline-block-icon {
+      left: auto;
+      right: -37px;
+    }
+  }
+}
+.tameline-block:last-child {
+  &::after {
+    display: none;
+  }
+}
+.tameline-block:first-child {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    &::before {
+      content: "";
+      width: 4px;
+      background-color: #e1eef4;
+      position: absolute;
+      top: -57px;
+      bottom: 190px;
+      right: 0;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &::before {
+      content: "";
+      width: 4px;
+      background-color: #e1eef4;
+      position: absolute;
+      top: -57px;
+      bottom: 190px;
+      right: 0;
+    }
+  }
+}
+.tameline-block-icon {
+  background-color: #ffffff;
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  border-radius: 28px;
+  box-shadow: 2px 3px 35px rgba(0, 112, 187, 0.5);
+  top: 0;
+  left: 0;
+}
+.item-icon {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+}
+.tameline-block-text {
+  padding-top: 1px;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 22px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 20px;
+  }
+}
+.tameline-block-text-paragraf {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+.text-paragraf {
+  font-weight: 700;
+  margin-bottom: 0;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+  }
+}
+.layout {
+  fill: #ffcf8f;
+}
+.chart {
+  fill: #ff5b5b;
+}
+.day {
+  fill: #ac74ee;
+}
+.stage {
+  fill: #51e5cb;
+}
+.final {
+  fill: #7cc0ff;
+}

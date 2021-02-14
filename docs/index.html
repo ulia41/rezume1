@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="fonts/mplus1p/mplus1p.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--fancibox.css-->
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
+    <link
+      rel="shortcut icon"
+      href="img/img-header/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Мое резюме</title>
+  </head>
+  <body>
+    <!-----overlay-->
+    <div id="overlay"></div>
+    <!-----//overlay-->
+    <!-----мобильное меню-->
+    <div class="mobile-menu">
+      <div class="mobile-container">
+        <a href="#" class="header-logo bottom-line"> ЮЗ</a>
+        <nav class="header-nav-mobile">
+          <a href="education.html" class="mobile-nav-link">Образование</a>
+          <a href="works.html" class="mobile-nav-link">Работы</a>
+          <a href="#contact-base" class="mobile-nav-link">Контакты</a>
+        </nav>
+
+        <nav class="icons icons-mobile">
+          <a href="https://github.com/ulia41" target="blank" class="nav-icon github1">
+            <svg
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"
+              />
+            </svg>
+          </a>
+          <!--<a href="#" class="nav-icon tele">
+            <svg
+              enable-background="new 0 0 24 24"
+              height="50"
+              viewBox="0 0 24 24"
+              width="50"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="12" />
+              <path
+                d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"
+                fill="#fff"
+              />
+            </svg>--->
+          </a>
+          <a href="https://vk.com/id66121201" target="blank" class="nav-icon wki">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 112.196 112.196"
+              style="enable-background: new 0 0 112.196 112.196"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <circle cx="56.098" cy="56.098" r="56.098" />
+                </g>
+                <path
+                  style="fill-rule: evenodd; clip-rule: evenodd; fill: #ffffff"
+                  d="M53.979,80.702h4.403c0,0,1.33-0.146,2.009-0.878
+                c0.625-0.672,0.605-1.934,0.605-1.934s-0.086-5.908,2.656-6.778c2.703-0.857,6.174,5.71,9.853,8.235
+                c2.782,1.911,4.896,1.492,4.896,1.492l9.837-0.137c0,0,5.146-0.317,2.706-4.363c-0.2-0.331-1.421-2.993-7.314-8.463
+                c-6.168-5.725-5.342-4.799,2.088-14.702c4.525-6.031,6.334-9.713,5.769-11.29c-0.539-1.502-3.867-1.105-3.867-1.105l-11.076,0.069
+                c0,0-0.821-0.112-1.43,0.252c-0.595,0.357-0.978,1.189-0.978,1.189s-1.753,4.667-4.091,8.636c-4.932,8.375-6.904,8.817-7.71,8.297
+                c-1.875-1.212-1.407-4.869-1.407-7.467c0-8.116,1.231-11.5-2.397-12.376c-1.204-0.291-2.09-0.483-5.169-0.514
+                c-3.952-0.041-7.297,0.012-9.191,0.94c-1.26,0.617-2.232,1.992-1.64,2.071c0.732,0.098,2.39,0.447,3.269,1.644
+                c1.135,1.544,1.095,5.012,1.095,5.012s0.652,9.554-1.523,10.741c-1.493,0.814-3.541-0.848-7.938-8.446
+                c-2.253-3.892-3.954-8.194-3.954-8.194s-0.328-0.804-0.913-1.234c-0.71-0.521-1.702-0.687-1.702-0.687l-10.525,0.069
+                c0,0-1.58,0.044-2.16,0.731c-0.516,0.611-0.041,1.875-0.041,1.875s8.24,19.278,17.57,28.993
+                C44.264,81.287,53.979,80.702,53.979,80.702L53.979,80.702z"
+                />
+              </g>
+            </svg>
+          </a>
+         <!----- <a href="#" class="nav-icon fais">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 291.319 291.319"
+              style="enable-background: new 0 0 291.319 291.319"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"
+                />
+                <path
+                  style="fill: #ffffff"
+                  d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+C154.791,104.556,158.341,100.277,163.394,100.277z"
+                />
+              </g>
+            </svg>
+          </a>--->
+        </nav>
+        <a class="header-mail mail-info" href="mailto:zvon04@mail.ru">zvon04@mail.ru</a>
+      </div>
+    </div>
+    <!-----//мобильное меню-->
+    <header class="header">
+      <div class="header-container">
+        <a href="index.html" class="header-logo bottom-line"> ЮЗ</a>
+        <nav class="header-nav">
+          <a href="index.html" class="header-nav-link">Главная</a>
+          <a href="works.html" class="header-nav-link">Работы</a>
+          <a href="education.html" class="header-nav-link">Образование</a>
+        </nav>
+        <nav class="header-nav-icon">
+          <!------ <a href="#" class="nav-icon-linkedin linkedin">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="linkedin-in"
+              class="svg-inline--fa fa-linkedin-in fa-w-14"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+              ></path>
+            </svg>
+          </a>---->
+          <a href="https://github.com/ulia41" target="blank" class="nav-icon-github github">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="github"
+              class="svg-inline--fa fa-github fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 496 512"
+            >
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://vk.com/id66121201" target="blank" class="nav-icon-vk vk">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="vk"
+              class="svg-inline--fa fa-vk fa-w-18"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <path
+                d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"
+              ></path>
+            </svg>
+          </a>
+        </nav>
+        <div class="header-burger">
+          <span></span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="wrapper">
+          <div class="header-content">
+            <h1 class="header1">
+              <span class="bottom-line">Юлия</span>
+              <br />
+              <span class="bottom-line"> Звонкова </span>
+            </h1>
+            <div class="header-paragraph">
+              <p class="paragraph">
+                Верстальщик сайтов, веб-разработчик. Оперативная верстка.
+                Работаю с соблюдением сроков и выполнением ТЗ.
+              </p>
+            </div>
+            <div class="header-buttom">
+              <a class="buttom buttom-one" href="#tame-line"
+                >Познакомиться</a
+              >
+              <a class="buttom buttom-two" href="#contact-base">Контакты</a>
+            </div>
+          </div>
+          <div class="header-foto">
+            <img class="foto" src="img/img-header/bg.jpg" alt="фото" />
+          </div>
+        </div>
+      </div>
+      <div class="header-BG">
+        <img src="img/img-header/BG_02.png" alt="картинка с компом" />
+      </div>
+      <div class="container" id="tame-line">
+        <div class="wrapper wrapper2">
+          <div class="header-content">
+            <h3 class="header3">Что я умею:</h3>
+            <ul class="header-skills">
+              <li class="header-skills-list">
+                <span class="t">—</span> pixel perfect, полное соответствие
+                макету.
+              </li>
+              <li class="header-skills-list">
+                <span class="t"> — </span> адаптивная верстка под мобильные
+                устройства.
+              </li>
+              <li class="header-skills-list">
+                <span class="t">—</span> оптимизация по retina экраны
+              </li>
+              <li class="header-skills-list">
+                <span class="t">—</span> с Bootstrap и без него.
+              </li>
+              <li class="header-skills-list">
+                <span class="t">—</span> верстаю с сеткой или без.
+              </li>
+            </ul>
+            <div class="header-buttom">
+              <a class="buttom buttom-one" href="#portfolio">Смотреть работы</a>
+            </div>
+          </div>
+
+          <div class="header-content skills">
+            <h3 class="header3">На связи:</h3>
+            <nav class="icons">
+              <a href="https://github.com/ulia41" target="blank" class="nav-icon github1">
+                <svg
+                  enable-background="new 0 0 24 24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"
+                  />
+                </svg>
+              </a>
+              <!--<a href="#" class="nav-icon tele">
+                <svg
+                  enable-background="new 0 0 24 24"
+                  height="50"
+                  viewBox="0 0 24 24"
+                  width="50"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="12" cy="12" r="12" />
+                  <path
+                    d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>---->
+              <a href="https://vk.com/id66121201" target="blank" class="nav-icon wki">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 112.196 112.196"
+                  style="enable-background: new 0 0 112.196 112.196"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <circle cx="56.098" cy="56.098" r="56.098" />
+                    </g>
+                    <path
+                      style="
+                        fill-rule: evenodd;
+                        clip-rule: evenodd;
+                        fill: #ffffff;
+                      "
+                      d="M53.979,80.702h4.403c0,0,1.33-0.146,2.009-0.878
+                    c0.625-0.672,0.605-1.934,0.605-1.934s-0.086-5.908,2.656-6.778c2.703-0.857,6.174,5.71,9.853,8.235
+                    c2.782,1.911,4.896,1.492,4.896,1.492l9.837-0.137c0,0,5.146-0.317,2.706-4.363c-0.2-0.331-1.421-2.993-7.314-8.463
+                    c-6.168-5.725-5.342-4.799,2.088-14.702c4.525-6.031,6.334-9.713,5.769-11.29c-0.539-1.502-3.867-1.105-3.867-1.105l-11.076,0.069
+                    c0,0-0.821-0.112-1.43,0.252c-0.595,0.357-0.978,1.189-0.978,1.189s-1.753,4.667-4.091,8.636c-4.932,8.375-6.904,8.817-7.71,8.297
+                    c-1.875-1.212-1.407-4.869-1.407-7.467c0-8.116,1.231-11.5-2.397-12.376c-1.204-0.291-2.09-0.483-5.169-0.514
+                    c-3.952-0.041-7.297,0.012-9.191,0.94c-1.26,0.617-2.232,1.992-1.64,2.071c0.732,0.098,2.39,0.447,3.269,1.644
+                    c1.135,1.544,1.095,5.012,1.095,5.012s0.652,9.554-1.523,10.741c-1.493,0.814-3.541-0.848-7.938-8.446
+                    c-2.253-3.892-3.954-8.194-3.954-8.194s-0.328-0.804-0.913-1.234c-0.71-0.521-1.702-0.687-1.702-0.687l-10.525,0.069
+                    c0,0-1.58,0.044-2.16,0.731c-0.516,0.611-0.041,1.875-0.041,1.875s8.24,19.278,17.57,28.993
+                    C44.264,81.287,53.979,80.702,53.979,80.702L53.979,80.702z"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <!---<a href="#" class="nav-icon fais">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 291.319 291.319"
+                  style="enable-background: new 0 0 291.319 291.319"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"
+                    />
+                    <path
+                      style="fill: #ffffff"
+                      d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+		v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+		C154.791,104.556,158.341,100.277,163.394,100.277z"
+                    />
+                  </g>
+                </svg>
+              </a>--->
+            </nav>
+            <a class="header-mail" href="mailto:zvon04@mail.ru">zvon04@mail.ru</a>
+            <div class="header-buttom">
+              <a class="buttom buttom-one" href="img/Юлия Звонкова-верстальщик.pdf" target="blank">Резюме pdf.формат</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <h2 class="header2 bottom-line">Портфолио</h2>
+
+          <div class="portfolio-wrapper">
+            <div class="portfolio-bloks-choice">
+              <button
+                type="button"
+                class="portfolio-choice control-active"
+                data-filter="all"
+              >
+                Все работы
+              </button>
+              <button type="button" class="portfolio-choice" data-filter=".bt">
+                Bootstrap
+              </button>
+             
+              <button type="button" class="portfolio-choice" data-filter=".ft">
+                Frontend
+              </button>
+            </div>
+            <!---Верстка карточек с работами-->
+            <div id="portfolio-works">
+              <a
+                data-fancybox="main-works"
+                target="blank"
+                href="img/img-works/diplom.jpg"
+                class="portfolio-card portfolio-img-card-big mix ft"
+                data-aos="zoom-out"
+               
+              >
+                <div class="portfolio-img-card big">
+                  <span class="button-hover">Смотреть проект</span>
+                  <img
+                    class="foto"
+                    src="img/img-portfolio/ioga.jpg"
+                    alt="йога"
+                  />
+                </div>
+                <div class="portfolio-title">
+                  <h4 class="header4 header4-big">Верстка страницы Тренд</h4>
+                  <p class="description">Лендинг "Тренд этого лета".</p>
+                </div>
+              </a>
+              <a
+                data-fancybox="main-works"
+                href="img/img-works/rezume.jpg"
+                class="portfolio-card portfolio-img-card-big mix ft"
+                data-aos="zoom-out"
+               
+              >
+                <div class="portfolio-img-card big">
+                  <span class="button-hover">Смотреть проект</span>
+                  <img
+                    class="foto"
+                    src="img/img-portfolio/portfolio.jpg"
+                    alt="портфолио"
+                  />
+                </div>
+                <div class="portfolio-title">
+                  <h4 class="header4 header4-big">Верстка сайта"Мое Резюме"</h4>
+                  <p class="description">Многостраничный проект.</p>
+                </div></a
+              >
+              <a
+                data-fancybox="main-works"
+                href="img/img-works/forest.jpg"
+                class="portfolio-card mix ft"
+                data-aos="zoom-out"
+                
+              >
+                <div class="portfolio-img-card">
+                  <span class="button-hover">Смотреть проект</span>
+                  <img
+                    class="foto"
+                    src="img/img-portfolio/trevel.jpg"
+                    alt="тревел"
+                  />
+                </div>
+                <div class="portfolio-title">
+                  <h4 class="header4">Верстка проекта Тревел</h4>
+                  <p class="description">Многостраничный проект.</p>
+                </div></a
+              >
+              <a
+                data-fancybox="main-works"
+                href="img/img-works/game.png"
+                class="portfolio-card mix ft"
+                data-aos="zoom-out"
+                
+              >
+                <div class="portfolio-img-card">
+                  <span class="button-hover">Смотреть проект</span>
+                  <img
+                    class="foto"
+                    src="img/img-works/game.png"
+                    alt="спорт"
+                  />
+                </div>
+                <div class="portfolio-title">
+                  <h4 class="header4">Верстка игры</h4>
+                  <p class="description">Верстка игры крестики-нолики</p>
+                </div></a
+              >
+              <a
+                data-fancybox="main-works"
+                href="img/img-works/Motobike-card.png"
+                class="portfolio-card mix ft"
+                data-aos="zoom-out"
+                
+              >
+                <div class="portfolio-img-card">
+                  <span class="button-hover">Смотреть проект</span>
+                  <img
+                    class="foto"
+                    src="img/img-portfolio/moto.jpg"
+                    alt="мото"
+                  />
+                </div>
+                <div class="portfolio-title">
+                  <h4 class="header4">Карточки с ценой</h4>
+                  <p class="description">Верстка лендинга</p>
+                </div></a
+              >
+              <a
+                data-fancybox="main-works"
+                href="img/img-works/unit.jpg"
+                class="portfolio-card mix bt"
+                data-aos="zoom-out"
+                
+              >
+                <div class="portfolio-img-card">
+                  <span class="button-hover">Смотреть проект</span>
+                  <img
+                    class="foto"
+                    src="img/img-portfolio/unit.jpg"
+                    alt="юнит"
+                  />
+                </div>
+                <div class="portfolio-title">
+                  <h4 class="header4">Верстка проекта Юнит</h4>
+                  <p class="description">Страница проекта.</p>
+                </div></a
+              >
+              <a
+                data-fancybox="main-works"
+                href="img/img-works/kart.jpg"
+                class="portfolio-card mix bt"
+                data-aos="zoom-out"
+               
+              >
+                <div class="portfolio-img-card">
+                  <span class="button-hover">Смотреть проект</span>
+                  <img
+                    class="foto"
+                    src="img/img-portfolio/kart.jpg"
+                    alt="карточка"
+                  />
+                </div>
+                <div class="portfolio-title">
+                  <h4 class="header4">Карточка</h4>
+                  <p class="description">Лендинг</p>
+                </div></a
+              >
+            </div>
+            <!---//Верстка карточек с работами-->
+            <div class="header-buttom df">
+              <a class="buttom buttom-one" href="works.html">Работы на сайте </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tameline" >
+        <div class="container">
+          <div class="wrapper-title">
+            <h2 class="header2 bottom-line">Как я работаю</h2>
+          </div>
+          <div class="wrapper-tameline">
+            <div
+              class="tameline-block"
+              data-aos="fade-up-right"
+              data-aos-delay="300"
+            >
+              <div class="tameline-block-icon">
+                <svg
+                  class="item-icon layout"
+                  data-name="Layer 2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                >
+                  <defs><style></style></defs>
+                  <title>layers</title>
+                  <path
+                    class="cls-1"
+                    d="M16.34,27.89a.83.83,0,0,1-.68,0L3.15,22.28,1.52,23a.91.91,0,0,0,0,1.65L15.66,31a.83.83,0,0,0,.68,0l14.14-6.35a.91.91,0,0,0,0-1.65l-1.62-.73Zm0-7.94a.83.83,0,0,1-.68,0L3.31,14.41l-1.79.8a.91.91,0,0,0,0,1.65l14.14,6.35a.83.83,0,0,0,.68,0l14.14-6.35a.91.91,0,0,0,0-1.65l-1.79-.8ZM30.48,9.07a.91.91,0,0,0,0-1.65L16.34,1.07a.83.83,0,0,0-.68,0L1.52,7.42a.91.91,0,0,0,0,1.65l14.14,6.35a.83.83,0,0,0,.68,0Z"
+                  />
+                </svg>
+              </div>
+
+              <div class="tameline-block-text">
+                <h4 class="header4 bottom-line">Оцениваю макет</h4>
+                <p class="tameline-block-text-paragraf">
+                  Оцениваю объем работы, сложность, нюансы. Задаю вопросы.
+                </p>
+                <p class="tameline-block-text-paragraf text-paragraf">
+                  Время: 2 - 4 часа
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="tameline-block"
+              data-aos="fade-up-left"
+              data-aos-delay="300"
+            >
+              <div class="tameline-block-icon">
+                <svg
+                  class="item-icon chart"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                >
+                  <defs><style></style></defs>
+                  <title>presentation-chart</title>
+                  <g data-name="Layer 2">
+                    <path
+                      class="cls-1"
+                      d="M21.47,28.32l-4-2.21s0-.07,0-.11V25h-3v1s0,.07,0,.11l-4,2.21A1.5,1.5,0,0,0,12,30.94l4-2.23,4,2.23a1.5,1.5,0,0,0,1.46-2.62ZM3,21a2,2,0,0,0,2,2H27a2,2,0,0,0,2-2V7H3Zm4.94-6.06,3-3a1.5,1.5,0,0,1,2.12,0L17,15.88l4.94-4.94a1.5,1.5,0,0,1,2.12,2.12l-6,6a1.5,1.5,0,0,1-2.12,0L12,15.12l-1.94,1.94a1.5,1.5,0,1,1-2.12-2.12ZM30.72,1.74A1.36,1.36,0,0,0,29.51,1h-27a1.36,1.36,0,0,0-1.21.74,3,3,0,0,0,0,2.52A1.36,1.36,0,0,0,2.49,5h27a1.36,1.36,0,0,0,1.21-.74A3,3,0,0,0,30.72,1.74Z"
+                    />
+                  </g>
+                </svg>
+              </div>
+
+              <div class="tameline-block-text">
+                <h4 class="header4 bottom-line">ТЗ, смета и график работ</h4>
+                <p class="tameline-block-text-paragraf">
+                  Согласовываем техническое задание и график работ по проекту.
+                  Осмечиваю стоимость по этапам работы.
+                </p>
+                <p class="tameline-block-text-paragraf text-paragraf">
+                  Время: 2 - 4 часа
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="tameline-block"
+              data-aos="fade-up-right"
+              data-aos-delay="300"
+            >
+              <div class="tameline-block-icon">
+                <svg
+                  class="item-icon day"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                >
+                  <defs><style></style></defs>
+                  <title>24-hours</title>
+                  <g data-name="Layer 2">
+                    <path
+                      class="cls-1"
+                      d="M26.36,9.79l-3.21,2.38A9.16,9.16,0,1,1,16,8.66h0v2.06c0,.55.37.75.83.45l6.38-4.25a.62.62,0,0,0,0-1.11L16.79,1.55c-.46-.31-.83-.1-.83.45V4.66h0A13.22,13.22,0,1,0,26.36,9.79ZM12,18.29c-.58.52-1.2,1-1.8,1.49-1.46,1.21-1.09,2.34.47,2.41h3.94c1.44-.07,1.42-1.86-.07-1.86l-2.16,0c.27-.21.56-.42.83-.64,1.23-1,2.32-2.13,2.32-3.59a2.8,2.8,0,0,0-3.05-2.75c-3.1,0-3.91,3.67-2.08,3.67,1.39,0,.69-1.74,2-1.74a.85.85,0,0,1,.88.9A3,3,0,0,1,12,18.29ZM19.55,22a1.06,1.06,0,0,0,1.61-.14,1.36,1.36,0,0,0,.21-.83v-.55a1.77,1.77,0,0,0,.76-.1.78.78,0,0,0,.48-.74.81.81,0,0,0-.51-.77,1.93,1.93,0,0,0-.72-.09V14.7a1.19,1.19,0,0,0-1.27-1.3A1.24,1.24,0,0,0,19,14l-2.83,3.91c-.72,1-.75,2.58.6,2.58h2.47V21A1.22,1.22,0,0,0,19.55,22Zm-1.91-3.21L19.43,16c0,.45-.06.89-.09,1.34s0,.94-.05,1.42Z"
+                    />
+                  </g>
+                </svg>
+              </div>
+
+              <div class="tameline-block-text">
+                <h4 class="header4 bottom-line">Вы держите руку на пульсе</h4>
+                <p class="tameline-block-text-paragraf">
+                  Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в
+                  любое время можете видеть актуальное состояние проекта и
+                  задач.
+                </p>
+                <p class="tameline-block-text-paragraf text-paragraf">
+                  Время: 2 часа
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="tameline-block"
+              data-aos="fade-up-left"
+              data-aos-delay="300"
+            >
+              <div class="tameline-block-icon">
+                <svg
+                  class="item-icon stage"
+                  data-name="Layer 2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                >
+                  <defs><style></style></defs>
+                  <title>code-alt</title>
+                  <path
+                    class="cls-1"
+                    d="M9.63,13.76A2.4,2.4,0,1,0,7.17,9.64a18.24,18.24,0,0,0-5.62,5.62,2.4,2.4,0,0,0,0,2.47,18.24,18.24,0,0,0,5.62,5.62,2.4,2.4,0,1,0,2.47-4.12,14.12,14.12,0,0,1-3.08-2.73A12.4,12.4,0,0,1,9.63,13.76Zm20.82,1.51a18.24,18.24,0,0,0-5.62-5.62,2.4,2.4,0,1,0-2.47,4.12,14.12,14.12,0,0,1,3.08,2.73,12.4,12.4,0,0,1-3.08,2.76,2.4,2.4,0,1,0,2.47,4.12,18.24,18.24,0,0,0,5.62-5.62A2.4,2.4,0,0,0,30.46,15.26ZM16.55,5l-5,21a2,2,0,0,0,3.89.93l5-21A2,2,0,0,0,16.55,5Z"
+                  />
+                </svg>
+              </div>
+
+              <div class="tameline-block-text">
+                <h4 class="header4 bottom-line">Выполняю каждый этап</h4>
+                <p class="tameline-block-text-paragraf">
+                  Поочередно выполняю каждый этап работы. Передаю результаты.
+                  Заказчик производит поэтапную оплату.
+                </p>
+                <p class="tameline-block-text-paragraf text-paragraf">
+                  Время: 2 - 4 часа
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="tameline-block"
+              data-aos="fade-up-right"
+              data-aos-delay="300"
+            >
+              <div class="tameline-block-icon">
+                <svg
+                  class="item-icon final"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                >
+                  <defs><style></style></defs>
+                  <title>diamond</title>
+                  <g data-name="Layer 2">
+                    <path
+                      class="cls-1"
+                      d="M30.84,10.75l-6.11-7A2.52,2.52,0,0,0,23.07,3h-14a2.55,2.55,0,0,0-1.67.75l-6.24,7a1.22,1.22,0,0,0,0,1.52L15.37,29.73a.78.78,0,0,0,1.26,0L30.87,12.27A1.23,1.23,0,0,0,30.84,10.75ZM10.31,13l1.89,8.09L5.59,13Zm6.63-7,1.43,4H13.63l1.43-4Zm1.67,7L16,24.18,13.39,13Zm3.08,0H26.4l-6.6,8.09Zm4.51-3H21.56L20.13,6h2.58ZM9.41,6h2.46l-1.43,4H5.85Z"
+                    />
+                  </g>
+                </svg>
+              </div>
+
+              <div class="tameline-block-text">
+                <h4 class="header4 bottom-line">Финальное ревью проекта</h4>
+                <p class="tameline-block-text-paragraf">
+                  Проект готов. Финальное ревью и полировка до идеального
+                  состояния. Передаю файлы проекта, заливаю сайт на хостинг
+                  заказчика.
+                </p>
+                <p class="tameline-block-text-paragraf text-paragraf">
+                  Время: 2 - 4 часа
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-base" class="contacts">
+        <div class="container">
+          <div class="wrapper-title">
+            <h2 class="header2 bottom-line">Контакты</h2>
+          </div>
+
+          <div class="wrapper">
+            <div class="contacts-content">
+              <div class="contact-icon"></div>
+              <p class="contact-paragraf">
+                Если вы ищите специалиста по верстке сайтов, front-end
+                разработчика в команду или для работы над проектом — напишите
+                мне.
+              </p>
+              <ul>
+                <li class="contact-list">
+                  <span>Email </span>
+                  <a class="contact-link" href="mailto:zvon04@mail.ru">zvon04@mail.ru</a>
+                </li>
+                <li class="contact-list">
+                  <span>Skype</span>
+                  <a class="contact-link" href="skype:https://join.skype.com/invite/h3iZfvIq48Zf"
+                    >Юлия Звонкова</a
+                  >
+                </li>
+                <li class="contact-list">
+                  <span>Телефон</span>
+                  <a class="contact-link lk" href="tel:+79271092278"
+                    >+7 (927) 109-22-78</a
+                  >
+                </li>
+                <li class="contact-list">
+                  <span>Адрес</span>
+                  <a class="contact-link lk" href="#"
+                    >Россия, Саратовская обл.</a
+                  >
+                </li>
+              </ul>
+
+              <nav class="icons">
+                <a href="https://github.com/ulia41" target="blank" class="nav-icon github1">
+                  <svg
+                    enable-background="new 0 0 24 24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"
+                    />
+                  </svg>
+                </a>
+               <!----- <a href="#" class="nav-icon tele">
+                  <svg
+                    enable-background="new 0 0 24 24"
+                    height="50"
+                    viewBox="0 0 24 24"
+                    width="50"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="12" cy="12" r="12" />
+                    <path
+                      d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>--->
+                <a href="https://vk.com/id66121201" target="blank" class="nav-icon wki">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 112.196 112.196"
+                    style="enable-background: new 0 0 112.196 112.196"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <circle cx="56.098" cy="56.098" r="56.098" />
+                      </g>
+                      <path
+                        style="
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                          fill: #ffffff;
+                        "
+                        d="M53.979,80.702h4.403c0,0,1.33-0.146,2.009-0.878
+                  c0.625-0.672,0.605-1.934,0.605-1.934s-0.086-5.908,2.656-6.778c2.703-0.857,6.174,5.71,9.853,8.235
+                  c2.782,1.911,4.896,1.492,4.896,1.492l9.837-0.137c0,0,5.146-0.317,2.706-4.363c-0.2-0.331-1.421-2.993-7.314-8.463
+                  c-6.168-5.725-5.342-4.799,2.088-14.702c4.525-6.031,6.334-9.713,5.769-11.29c-0.539-1.502-3.867-1.105-3.867-1.105l-11.076,0.069
+                  c0,0-0.821-0.112-1.43,0.252c-0.595,0.357-0.978,1.189-0.978,1.189s-1.753,4.667-4.091,8.636c-4.932,8.375-6.904,8.817-7.71,8.297
+                  c-1.875-1.212-1.407-4.869-1.407-7.467c0-8.116,1.231-11.5-2.397-12.376c-1.204-0.291-2.09-0.483-5.169-0.514
+                  c-3.952-0.041-7.297,0.012-9.191,0.94c-1.26,0.617-2.232,1.992-1.64,2.071c0.732,0.098,2.39,0.447,3.269,1.644
+                  c1.135,1.544,1.095,5.012,1.095,5.012s0.652,9.554-1.523,10.741c-1.493,0.814-3.541-0.848-7.938-8.446
+                  c-2.253-3.892-3.954-8.194-3.954-8.194s-0.328-0.804-0.913-1.234c-0.71-0.521-1.702-0.687-1.702-0.687l-10.525,0.069
+                  c0,0-1.58,0.044-2.16,0.731c-0.516,0.611-0.041,1.875-0.041,1.875s8.24,19.278,17.57,28.993
+                  C44.264,81.287,53.979,80.702,53.979,80.702L53.979,80.702z"
+                      />
+                    </g>
+                  </svg>
+                </a>
+               <!----- <a href="#" class="nav-icon fais">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 291.319 291.319"
+                    style="enable-background: new 0 0 291.319 291.319"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+  S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"
+                      />
+                      <path
+                        style="fill: #ffffff"
+                        d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+  v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+  C154.791,104.556,158.341,100.277,163.394,100.277z"
+                      />
+                    </g>
+                  </svg>
+                </a>-->
+              </nav>
+            </div>
+            <div>
+              <form class="contact-form">
+                <div class="form-item">
+                  <span class="fake-placeholder">Ваш email</span>
+                  <input type="text" class="form-field" name="email" />
+                </div>
+                <div class="form-item">
+                  <span class="fake-placeholder">Тема письма</span>
+                  <input type="text" class="form-field letter" name="subject" />
+                </div>
+                <div class="form-item">
+                  <span class="fake-placeholder">Сообщение</span>
+                  <textarea name="message" class="form-field"></textarea>
+                </div>
+                <div class="form-item btn">
+                  <input class="buttom" type="submit" value="Отправить" />
+                </div>
+              </form>
+              <div id="answer"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="contact-footer">
+      <div class="container">
+        <div class="contact-footer-item">
+          <p class="contact-footer-item1">
+            <span class="footer-span">&copy; 2021</span> — Юлия Звонкова
+          </p>
+          <p class="contact-footer-item2">
+            Веб-разработчик из Саратовской области, занимаюсь версткой и
+            созданием сайтов. Этот сайт сделала в рамках прохождения обучения по
+            верстке на курсах от <a target="blank" href="https://webcademy.ru/">WebCademy.ru</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="libs/jquery/jquery-3.0.0.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.js"></script>
+    <script src="libs/jquery.validate/jquery.validate.js"></script>
+    <script src="libs/mixitUp/mixitup3/mixitup.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!---скрипт для плавного движения при прокручивании -->
+    <script src="libs/SmoothScroll.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

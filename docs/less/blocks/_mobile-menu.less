@@ -1,0 +1,87 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 320px;
+  height: 100vh;
+  background-color: rgba(24, 38, 111, 0.5);
+  z-index: 4;
+  transition: 0.5s;
+  transform: translateX(100%);
+  padding-top: 35px;
+  border: 1px solid rgb(197, 193, 193);
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+.mobile-menu.activ {
+  transform: translateX(0);
+}
+.mobile-container {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mobile-container .header-logo {
+  color: #ffffff;
+}
+.header-nav-mobile {
+  display: block;
+  margin-top: 47px;
+  margin-bottom: 44px;
+}
+.mobile-nav-link {
+  display: block;
+  color: #ffffff;
+  font-family: "M PLUS 1p";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  width: fit-content;
+  border-bottom: 1px solid white;
+  margin-bottom: 25px;
+}
+.mobile-nav-link:hover {
+  color: aqua;
+  border-bottom: 1px solid aqua;
+}
+
+.mail-info {
+  color: white;
+  border-bottom: 1px solid white;
+}
+.mail-info:hover {
+  color: aqua;
+  border-bottom: 1px solid aqua;
+}
+.icons-mobile {
+  margin-bottom: 40px;
+  font-size: 0;
+}
+.fais {
+  fill: #3b5998;
+}
+.fais:hover {
+  fill: aqua;
+}
+.wki {
+  fill: #4d76a1;
+}
+.wki:hover {
+  fill: aqua;
+}
+.tele {
+  fill: #039be5;
+}
+.tele:hover {
+  fill: aqua;
+}
+.github1 {
+  fill: #212121;
+}
+.github1:hover {
+  fill: aqua;
+}

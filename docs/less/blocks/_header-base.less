@@ -1,0 +1,115 @@
+.header1 {
+  font-family: "M PLUS 1p";
+  font-size: 42px;
+  font-weight: 800;
+  text-align: left;
+  line-height: 1.1;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 20px;
+    margin-bottom: 26px;
+    font-size: 52px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 90px;
+    line-height: 1.1;
+    margin-bottom: 28px;
+  }
+}
+.buttom-one {
+  margin-right: 20px;
+}
+.buttom-two {
+  background-color: #ffffff;
+  border: 5px solid #464646;
+  color: rgb(5, 5, 99);
+}
+.buttom-two:hover {
+  background-color: inherit;
+  border: 5px solid #9b9a9a;
+  color: #9b9a9a;
+}
+.buttom-two:active {
+  background-color: inherit;
+  border: 5px solid black;
+  color: black;
+}
+.header-paragraph {
+  width: 290px;
+  display: inline-block;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    width: 328px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 488px;
+    margin-bottom: 30px;
+  }
+}
+.header-foto {
+  flex-shrink: 0;
+  width: 290px;
+  height: 290px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 52px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 290px;
+    height: 290px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    width: 290px;
+    height: 290px;
+    margin-right: 25px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1200px) {
+    width: 457px;
+    height: 410px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+.foto {
+  height: 100%;
+  object-fit: cover;
+  width: fit-content;
+}
+.header-BG {
+  max-width: 567px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(1.8);
+  margin-bottom: 67px;
+  margin-top: 36px;
+  position: relative;
+  z-index: 0;
+
+  @media (min-width: 425px) and (max-width: 575px) {
+    transform: scale(1.6);
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    transform: scale(1.2);
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    max-width: 1199px;
+    margin-bottom: 0;
+    margin-top: -49px;
+    transform: scale(1);
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1600px;
+    margin-top: -130px;
+    margin-bottom: 0;
+    transform: scale(1);
+  }
+}
